@@ -1,0 +1,67 @@
+p {
+  color: #524e4e;
+  width: 1280px;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+h2, h3, h4 {
+  color: #524e4e;
+  width: 1280px;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+figcaption {
+  color: #524e4e;
+  text-align: justify;
+  margin-right: 135px;
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:visited:hover {
+  color: lime;
+}
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

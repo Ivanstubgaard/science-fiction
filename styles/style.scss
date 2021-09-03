@@ -1,0 +1,66 @@
+$textColor: rgb(82, 78, 78);
+$linkColor: rgb(0, 0, 255);
+@mixin centrer($centerPlacement) {
+    display: flex;
+    justify-content: $centerPlacement;
+    align-items: $centerPlacement;
+}
+@mixin textPos {
+    width: 1280px;
+    text-align: justify;
+    margin-left: 40px;
+}
+
+p {
+    color: $textColor;
+    @include textPos();
+}
+h2, h3, h4 {
+    color: $textColor;
+    @include textPos();
+}
+
+figcaption {
+    color: $textColor;
+    text-align: justify;
+    margin-right: 135px;
+}
+
+
+a {
+    color: $linkColor;
+    &:visited{
+        color: $linkColor;
+        &:hover{
+            color: rgb(0, 255, 0);
+        }
+    }
+}
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+text-align: center;
+}
+
+ul {
+@include centrer(center);
+list-style-type: none;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
